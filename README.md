@@ -29,6 +29,8 @@ php artisan infyom:publish --localized
 composer require infyomlabs/laravel-ui-adminlte
 ```
 
+- Might face error in App/Providers/RouteServiceProvider.php, to remove additional code.
+
 ```bash
 php artisan ui adminlte --auth
 ```
