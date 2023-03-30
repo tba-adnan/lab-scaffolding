@@ -1,9 +1,11 @@
+# Lab Scaffolding : 
+
 ## Create new Laravel project
 ```bash
 composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
 ```
 
-> Add following packages into composer.json while using it with Laravel 9.
+- Add following packages into composer.json while using it with Laravel 9.
 ```json
  "require": {
      "infyomlabs/laravel-generator": "^5.0",
@@ -11,7 +13,7 @@ composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
      "doctrine/dbal": "~2.3"
  }  
  ```
-> composer update
+- composer update
 
 ```bash
 php artisan vendor:publish --provider="InfyOm\Generator\InfyOmGeneratorServiceProvider"
