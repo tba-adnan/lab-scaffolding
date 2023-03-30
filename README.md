@@ -19,7 +19,9 @@ composer create-project --prefer-dist laravel/laravel:^9.0 project-manager
 php artisan vendor:publish --provider="InfyOm\Generator\InfyOmGeneratorServiceProvider"
 ```
  
+
 ```bash
+php artisan infyom:publish
 php artisan infyom:publish --localized
 ```
 
