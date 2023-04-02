@@ -11,7 +11,7 @@ use Flash;
 
 class ProjectController extends AppBaseController
 {
-    /** @var ProjectRepository $projectRepository*/
+    // /** @var ProjectRepository $projectRepository*/
     private $projectRepository;
 
     public function __construct(ProjectRepository $projectRepo)
@@ -26,8 +26,7 @@ class ProjectController extends AppBaseController
     {
         $projects = $this->projectRepository->paginate(10);
 
-        return view('projects.index')
-            ->with('projects', $projects);
+        return view('projects.index')->with('projects', $projects);
     }
 
     /**
@@ -47,7 +46,7 @@ class ProjectController extends AppBaseController
 
         $project = $this->projectRepository->create($input);
 
-        Flash::success('Project saved successfully.');
+        Flash::success('Project saved successfully (demo).');
 
         return redirect(route('projects.index'));
     }
